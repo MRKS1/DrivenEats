@@ -64,7 +64,6 @@ function closeOrder(finishOrder) {
     document.querySelector(".orderTotal").innerHTML = totalPrint;
 
 
-
     document.querySelector(".lowOpacity").classList.remove("hide");
     document.querySelector(".popup").classList.remove("hide");
 
