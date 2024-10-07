@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrivenEats</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="page">
+    <div class="lowOpacity hide">
+    </div>
+    <div class="popup hide">
+        <div class="resume"><h5>Confirme seu pedido</h5>
+        <p class="orderFood">Frango Yin Yang: 14.90</p>
+        <p class="orderDrink">Coquinha gelada: 4.90</p>
+        <p class="orderCandy">Pudim: 7.90</p>
+        <h5 class="orderTotal">TOTAL: 27.70</h5>
+        <div class="order">
+        <a class="wpp" href="" onclick="sendMsg()">Tudo certo, pode pedir!</a>
+        </div>
+        <button onclick="cancel()">Cancelar</button>
+    </div>
+    </div>
+    <div class="header margin">
+        <h1 class="title righteous-regular">DrivenEats</h1>
+        <h2 class="subtitle">Sua comida em 6 minutos</h2>
+    </div>
+    <div class="container margin" onclick="choiceAll(all)">
+        <div class="line">
+            <h3 class="righteous-regular">Primeiro, seu prato</h3>
+            <div class="scroll food">
+                <div class="box" onclick="choiceFood(this)">
+                    <img src="projeto__driven-eats__imagens/pf_frango.jpg" class="box-margin"/>
+                    <h4 class="box-margin name">Frango</h4>
+                    <p class="discrption box-margin">Acompanha arroz, feijão e salada</p>
+                    <p class="price box-margin">14.90</p>
+                </div>
+                <div class="box" onclick="choiceFood(this)">
+                    <img src="projeto__driven-eats__imagens/pf_carne.jpg" class="box-margin"/>
+                    <h4 class="box-margin name">Carne</h4>
+                    <p class="discrption box-margin">Acompanha arroz, feijão e salada</p>
+                    <p class="price box-margin">17.90</p>
+                </div>
+                <div class="box" onclick="choiceFood(this)">
+                    <img src="projeto__driven-eats__imagens/pf_calabresa.png" class="box-margin"/>
+                    <h4 class="box-margin name">Calabresa</h4>
+                    <p class="discrption box-margin">Acompanha arroz, feijão e salada</p>
+                    <p class="price box-margin">16.90</p>
+                </div>
+
+            </div>
+        </div>   
+        <div class="line">
+            <h3 class="righteous-regular">Agora, sua bebida</h3>
+            <div class="scroll drink">
+                <div class="box" onclick="choiceDrink(this)">
+                    <img src="projeto__driven-eats__imagens/coca.png" class="box-margin"/>
+                    <h4 class="box-margin name">Coca-cola</h4>
+                    <p class="discrption box-margin">Lata 350ml</p>
+                    <p class="price box-margin">6.90</p>
+                </div>
+                <div class="box" onclick="choiceDrink(this)">
+                    <img src="projeto__driven-eats__imagens/fanta.png" class="box-margin"/>
+                    <h4 class="box-margin name">Fanta</h4>
+                    <p class="discrption box-margin">Lata 350ml</p>
+                    <p class="price box-margin">4.90</p>
+                </div>
+                <div class="box" onclick="choiceDrink(this)">
+                    <img src="projeto__driven-eats__imagens/suco.png" class="box-margin"/>
+                    <h4 class="box-margin name">Suco</h4>
+                    <p class="discrption box-margin">500ml</p>
+                    <p class="price box-margin">7.90</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="line">
+            <h3 class="righteous-regular">Por fim, sua sobremesa</h3>
+            <div class="scroll candy">
+                <div class="box" onclick="choiceCandy(this)">
+                    <img src="projeto__driven-eats__imagens/pudim.jpg" class="box-margin"/>
+                    <h4 class="box-margin name">Pudim</h4>
+                    <p class="discrption box-margin">Apenas um pudim</p>
+                    <p class="price box-margin">7.90</p>
+                </div>
+                <div class="box" onclick="choiceCandy(this)">
+                    <img src="projeto__driven-eats__imagens/mouse.jpg" class="box-margin"/>
+                    <h4 class="box-margin name">Mousse</h4>
+                    <p class="discrption box-margin">Cremoso, gostoso</p>
+                    <p class="price box-margin">6.90</p>
+                </div>
+                <div class="box" onclick="choiceCandy(this)">
+                    <img src="projeto__driven-eats__imagens/brownie.jpg" class="box-margin"/>
+                    <h4 class="box-margin name">Brownie</h4>
+                    <p class="discrption box-margin">É um bolinho</p>
+                    <p class="price box-margin">4.90</p>
+                </div>
+
+            </div>
+        </div>
+    
+    </div>
+    <div class="footer">
+         <button class="notFinish" onclick="closeOrder(all)">Selecione os 3 itens <br>para fechar o pedido</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
