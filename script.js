@@ -75,7 +75,6 @@ function closeOrder(finishOrder) {
             
     }
 
-
     function sendMsg(wpp) {
         const foodNameWpp = document.querySelector(".food .selected .name").innerHTML;
         const drinkNameWpp = document.querySelector(".drink .selected .name").innerHTML;

@@ -54,6 +54,7 @@
     color: white;
     font-size: 20px;
     font-weight: 700;
+    cursor: pointer;
    }
 
    .resume h5 {
@@ -231,6 +232,7 @@
     align-items: center;
     justify-content: center;
     border-color: #CBCBCB;
+    cursor: pointer;
    }
 
 
